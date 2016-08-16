@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('jon-snow:server');
+var debug = require('debug')('noddy:server');
 var http = require('http');
 
 /**
