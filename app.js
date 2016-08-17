@@ -23,7 +23,8 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 app.use(cookieParser());
-app.use('/static', express.static(path.join(__dirname, 'public')));
+dirname = process.cwd();
+app.use('/static', express.static(path.join(dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
